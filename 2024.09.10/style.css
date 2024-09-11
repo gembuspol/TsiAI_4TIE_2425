@@ -1,0 +1,36 @@
+#naglowek1{
+    width: 60%;
+    border: 2%;
+    border-style: dotted;
+    border-color: blue;
+    float: left;
+}
+#naglowek2{
+    width: 39%;
+    border: 2%;
+    border-style: dotted;
+    border-color: rgb(30, 145, 120);
+    float: left;
+}
+#blok1{
+    float: left;
+    width: 50%;
+}
+#laczenie{
+    float: left;
+    width: 49%;
+    border: 2%;
+    border-style: dotted;
+    border-color: rgb(218, 31, 124);
+}
+#blok2, #blok3{
+    border: 2%;
+    border-style: dotted;
+    border-color: rgb(218, 31, 124);
+}
+footer{
+    border: 2%;
+    border-style: dotted;
+    border-color: rgb(112, 126, 49);
+    clear: both;
+}
