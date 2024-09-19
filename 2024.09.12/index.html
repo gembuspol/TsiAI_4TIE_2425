@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zajęcia 3</title>
+    <style>
+        table,th,td{
+            border: 1px solid black ;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tabele</h1>
+    </header>
+    <main>
+        <!-- Tworzenie tabeli w html. Wykorzystujemy nazstępujące znaczniki:
+        <table></table> - początek deklaracji tabeli i jego koniec 
+        <tr></tr> - znacznik rozpoczynający nowy wiersz i kończący ten wiersz
+        <th></th> - deklaracja pola jako nagłówka tebeli
+        <td></td> deklaracja pola tabeli
+        -->
+        <table style="width: 100%;">
+            <tr>
+                <th style="width: 20%;">Lp.</th>
+                <th style="width: 40%;">Nazwa gry</th>
+                <th style="width: 40%;">Cena</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Football Manager 2024</td>
+                <td>za darmo</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>CS 2</td>
+                <td>za darmo</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td rowspan="2">Anno</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>5. </td>
+                <td colspan="2">Testowe</td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
