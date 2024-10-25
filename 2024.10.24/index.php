@@ -25,6 +25,16 @@
                 <label for="motocykl">Motocykl</label><br>
                 <input type="radio" id="rower" name="poleRadio" value="rower">
                 <label for="rower">Rower</label><br>
+                <label for="opcje">Wybierz interesującą Ciebie grę</label>
+                <br>
+                <input type="checkbox" id="gra1" name="gra1">
+                <label for="gra1">Fortnite</label>
+                <br>
+                <input type="checkbox" id="gra2" name="gra2">
+                <label for="gra2">Roblox</label>
+                <br>
+                <input type="checkbox" id="gra3" name="gra3" value="CS">
+                <label for="gra3">CS</label>
                 <br>
                 <input type="reset" value="Reset">
                 <input type="submit" value="Wyślij">
@@ -49,6 +59,29 @@
                     default:
                         echo "Błędne dane";
                 }
+                echo "<h2>Pole RADIO</h2>";
+                echo $_POST['poleRadio'];
+
+                echo "<h2>Pole CHECKBOX</h2>";
+                if(empty($_POST['gra1'])){
+                    echo "Gra1 niezaznaczona<br>";
+                }else{
+                    echo "Gra1: ".$_POST['gra1']."<br>";
+                    echo "Gra1 jest zaznaczona<br>";
+                }
+                if(empty($_POST['gra2'])){
+                    echo "Gra2 niezaznaczona<br>";
+                }else{
+                    echo "Gra2: ".$_POST['gra2']."<br>";
+                    echo "Gra2 jest zaznaczona<br>";
+                }
+                if(empty($_POST['gra3'])){
+                    echo "Gra3 niezaznaczona<br>";
+                }else{
+                    echo "Gra3: ".$_POST['gra3']."<br>";
+                    echo "Gra3 jest zaznaczona<br>";
+                }
+
 
             }else{
                 echo "Brak danych<br>";
